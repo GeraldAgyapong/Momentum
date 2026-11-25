@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #F6F4EE; /* Ivory */
+  --foreground: #252824; /* Charcoal */
+  --card: #FFFFFF;
+  --card-foreground: #252824;
+  --border: #E5E2D8;
+  --primary: #173B32; /* Forest */
+  --primary-foreground: #FFFFFF;
+  --secondary: #DCE9DF; /* Sage */
+  --secondary-foreground: #173B32;
+  --accent: #C5A36B; /* Muted Gold */
+  --accent-foreground: #FFFFFF;
+  --muted: #EDEAE1;
+  --muted-foreground: #858A82;
+}
+
+.dark {
+  --background: #141715;
+  --foreground: #F6F4EE;
+  --card: #1D211E;
+  --card-foreground: #F6F4EE;
+  --border: #2D332F;
+  --primary: #4F9C8A;
+  --primary-foreground: #091B17;
+  --secondary: #232B25;
+  --secondary-foreground: #DCE9DF;
+  --accent: #D3B57C;
+  --accent-foreground: #141613;
+  --muted: #242A26;
+  --muted-foreground: #9EA39B;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: var(--font-sans), system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Tabular numerals for statistics as requested in Section 15 */
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(133, 138, 130, 0.3);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(133, 138, 130, 0.5);
+}
